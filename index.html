@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Luxury Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Animated Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="brand">LOGO</div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="floating-gems">
+            <div class="gem" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="gem" style="top: 60%; left: 80%; animation-delay: 3s;"></div>
+            <div class="gem" style="top: 40%; left: 60%; animation-delay: 6s;"></div>
+            <div class="gem" style="top: 80%; left: 30%; animation-delay: 9s;"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Exclusive Collection 2025</p>
+            <h1 class="hero-title">Timeless Elegance<br>Redefined</h1>
+            <p class="hero-description">
+                Discover our exquisite collection of handcrafted jewelry, where luxury meets artistry in every piece
+            </p>
+            <a href="#contact" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Experience luxury. Schedule your private consultation today.</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <span class="error-message">Please enter your name</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <span class="error-message">Please enter a valid email address</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your dream piece..."></textarea>
+                    <span class="error-message">Please enter your message</span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <div class="success-message" id="successMessage">
+                ✨ Thank you for your message! We'll get back to you within 24 hours.
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
